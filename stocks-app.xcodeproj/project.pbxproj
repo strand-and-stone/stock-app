@@ -16,6 +16,12 @@
 		7627B02A27D0118C008108DC /* stocks_appTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7627B02927D0118C008108DC /* stocks_appTests.swift */; };
 		7627B03427D0118C008108DC /* stocks_appUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7627B03327D0118C008108DC /* stocks_appUITests.swift */; };
 		7627B03627D0118C008108DC /* stocks_appUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7627B03527D0118C008108DC /* stocks_appUITestsLaunchTests.swift */; };
+		7627B04927D0711B008108DC /* cash-data-package in Frameworks */ = {isa = PBXBuildFile; productRef = 7627B04827D0711B008108DC /* cash-data-package */; };
+		7627B04B27D0711B008108DC /* cash-network-package in Frameworks */ = {isa = PBXBuildFile; productRef = 7627B04A27D0711B008108DC /* cash-network-package */; };
+		7627B04E27D07552008108DC /* StockCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7627B04D27D07552008108DC /* StockCell.swift */; };
+		7627B05027D095BE008108DC /* StockFooter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7627B04F27D095BD008108DC /* StockFooter.swift */; };
+		7627B05227D1C336008108DC /* StockHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7627B05127D1C336008108DC /* StockHeader.swift */; };
+		7627B05627D1D5F6008108DC /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7627B05527D1D5F6008108DC /* ErrorView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +55,12 @@
 		7627B02F27D0118C008108DC /* stocks-appUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "stocks-appUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7627B03327D0118C008108DC /* stocks_appUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = stocks_appUITests.swift; sourceTree = "<group>"; };
 		7627B03527D0118C008108DC /* stocks_appUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = stocks_appUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		7627B04327D011F6008108DC /* cash-data-package */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = "cash-data-package"; sourceTree = "<group>"; };
+		7627B04427D01201008108DC /* cash-network-package */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = "cash-network-package"; sourceTree = "<group>"; };
+		7627B04D27D07552008108DC /* StockCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockCell.swift; sourceTree = "<group>"; };
+		7627B04F27D095BD008108DC /* StockFooter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockFooter.swift; sourceTree = "<group>"; };
+		7627B05127D1C336008108DC /* StockHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockHeader.swift; sourceTree = "<group>"; };
+		7627B05527D1D5F6008108DC /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +68,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7627B04927D0711B008108DC /* cash-data-package in Frameworks */,
+				7627B04B27D0711B008108DC /* cash-network-package in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,10 +93,13 @@
 		7627B00627D01189008108DC = {
 			isa = PBXGroup;
 			children = (
+				7627B04327D011F6008108DC /* cash-data-package */,
+				7627B04427D01201008108DC /* cash-network-package */,
 				7627B01127D01189008108DC /* stocks-app */,
 				7627B02827D0118C008108DC /* stocks-appTests */,
 				7627B03227D0118C008108DC /* stocks-appUITests */,
 				7627B01027D01189008108DC /* Products */,
+				7627B04727D0711B008108DC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,9 +116,10 @@
 		7627B01127D01189008108DC /* stocks-app */ = {
 			isa = PBXGroup;
 			children = (
+				7627B05427D1D5EB008108DC /* Views */,
+				7627B04527D06B23008108DC /* Controllers */,
 				7627B01227D01189008108DC /* AppDelegate.swift */,
 				7627B01427D01189008108DC /* SceneDelegate.swift */,
-				7627B01627D01189008108DC /* ViewController.swift */,
 				7627B01827D01189008108DC /* Main.storyboard */,
 				7627B01B27D0118C008108DC /* Assets.xcassets */,
 				7627B01D27D0118C008108DC /* LaunchScreen.storyboard */,
@@ -127,6 +145,40 @@
 			path = "stocks-appUITests";
 			sourceTree = "<group>";
 		};
+		7627B04527D06B23008108DC /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				7627B04C27D07545008108DC /* Cells */,
+				7627B01627D01189008108DC /* ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		7627B04727D0711B008108DC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7627B04C27D07545008108DC /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				7627B04D27D07552008108DC /* StockCell.swift */,
+				7627B04F27D095BD008108DC /* StockFooter.swift */,
+				7627B05127D1C336008108DC /* StockHeader.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		7627B05427D1D5EB008108DC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				7627B05527D1D5F6008108DC /* ErrorView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -143,6 +195,10 @@
 			dependencies = (
 			);
 			name = "stocks-app";
+			packageProductDependencies = (
+				7627B04827D0711B008108DC /* cash-data-package */,
+				7627B04A27D0711B008108DC /* cash-network-package */,
+			);
 			productName = "stocks-app";
 			productReference = 7627B00F27D01189008108DC /* stocks-app.app */;
 			productType = "com.apple.product-type.application";
@@ -259,7 +315,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				7627B01727D01189008108DC /* ViewController.swift in Sources */,
+				7627B05227D1C336008108DC /* StockHeader.swift in Sources */,
 				7627B01327D01189008108DC /* AppDelegate.swift in Sources */,
+				7627B04E27D07552008108DC /* StockCell.swift in Sources */,
+				7627B05627D1D5F6008108DC /* ErrorView.swift in Sources */,
+				7627B05027D095BE008108DC /* StockFooter.swift in Sources */,
 				7627B01527D01189008108DC /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -604,6 +664,17 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		7627B04827D0711B008108DC /* cash-data-package */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = "cash-data-package";
+		};
+		7627B04A27D0711B008108DC /* cash-network-package */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = "cash-network-package";
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 7627B00727D01189008108DC /* Project object */;
 }
