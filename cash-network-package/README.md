@@ -1,3 +1,3 @@
 # cash-network-package
 
-A description of this package.
+This package will be used to handle network requests.

@@ -1,3 +1,3 @@
 # cash-data-package
 
-A description of this package.
+This package will be used to define data models.
